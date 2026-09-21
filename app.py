@@ -34,7 +34,7 @@ if archivo_subido is not None:
         
     # Extraer solo las variables matemáticas que la IA necesita para predecir
     # (Asegúrate de que el CSV que suba el operador tenga estas columnas)
-    columnas_ia = ['numeromesesatraso_caf', 'consumo_caf', 'consumopromedio_ins', 'valorapagar_def']
+    columnas_ia = ['numeromesesatraso_caf', 'consumo_caf', 'consumopromedio_ins', 'serial_ccl', 'valorapagar_def']
     
     try:
         datos_ia = df[columnas_ia].fillna(0) # Llenamos nulos con 0 por seguridad
