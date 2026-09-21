@@ -3,7 +3,7 @@ import pandas as pd
 import joblib
 
 # 1. Configuración de la ventana
-st.set_page_config(page_title="Gestión de Cartera - Municipio de Montúfar", layout="wide")
+st.set_page_config(page_title="Gestión de Cartera - Municipio de Mejia", layout="wide")
 
 # 2. Títulos institucionales
 st.title("💧 Sistema IA de Priorización de Cobranza")
@@ -13,7 +13,7 @@ st.write("Cargue el archivo CSV de facturas del mes para que el modelo XGBoost d
 # 3. Cargar el cerebro de la IA
 @st.cache_resource
 def cargar_modelo():
-    return joblib.load('modelo_montufar.pkl')
+    return joblib.load('modelo_Mejia.pkl')
 
 modelo = cargar_modelo()
 
